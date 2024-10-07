@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unde ne găsești - F.E. MK TECH</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2e8b57; /* Verde smarald pentru fundal */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        header {
+            background-color: #276d46; /* Verde mai închis pentru header */
+            color: white;
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            margin-left: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            flex: 1;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            color: #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #2e8b57;
+            text-align: center;
+        }
+        .map-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 8px;
+        }
+        .location-button {
+            display: block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            background-color: #2e8b57;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: fit-content;
+        }
+        .location-button:hover {
+            background-color: #276d46;
+        }
+        footer {
+            background-color: #276d46; /* Verde mai închis pentru footer */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <span>F.E. MK TECH SRL</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="produse.html">Produse</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="locatie.html">Unde ne găsești?</a></li>
+            <li><a href="despre.html">Despre noi</a></li> <!-- Link către pagina Despre noi -->
+        </ul>
+    </nav>
+</header>
+
+<div class="content">
+    <h1>Unde ne găsești</h1>
+    <p>Ne poți găsi la locația următoare:</p>
+    
+    <div class="map-container">
+        <!-- Harta integrată cu Colegiul Economic Focșani -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.759143320105!2d27.180574315520595!3d45.69936317910471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b47b2ed5b11a29%3A0x1ed343dc8fe8b92d!2sColegiul%20Economic%20Mihail%20Kog%C4%83lniceanu%2C%20Strada%20Cuza%20Vod%C4%83%20nr.%2051%2C%20Foc%C8%99ani%2C%20Jude%C8%9Bul%20Vrancea%2C%20Rom%C3%A2nia!5e0!3m2!1sen!2sro!4v1695292794895!5m2!1sen!2sro" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    
+    <!-- Buton pentru deschiderea locației în hărți -->
+    <a href="https://www.google.com/maps/dir/?api=1&destination=45.699363,27.180574" class="location-button" target="_blank">Vezi locația</a>
+</div>
+
+<footer>
+    <p>&copy; 2024 F.E. MK TECH - Toate drepturile rezervate</p>
+</footer>
+
+</body>
+</html>

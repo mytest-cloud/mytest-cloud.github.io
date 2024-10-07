@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produse - F.E. MK TECH</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #2e8b57; /* Verde smarald */
+            color: white;
+            padding: 20px;
+            text-align: left;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            margin-left: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+        }
+        nav ul li a:hover {
+            background-color: #1e7041; /* Schimbare la hover */
+            border-radius: 5px;
+        }
+        section {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2e8b57;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2e8b57;
+            color: white;
+            margin-top: 20px;
+        }
+        .product {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .product img {
+            max-width: 150px;
+            border-radius: 8px;
+        }
+        .product-info {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+        .product-info h3 {
+            margin-top: 0;
+            color: #2e8b57;
+        }
+        .product-info p {
+            margin: 5px 0;
+        }
+        .price {
+            font-weight: bold;
+            color: #2e8b57;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <span>F.E. MK TECH SRL</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="produse.html">Produse</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="locatie.html">Unde ne găsești?</a></li>
+            <li><a href="despre.html">Despre noi</a></li> <!-- Link către pagina Despre noi -->
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <h1>Calculatoare & Laptopuri</h1>
+    <p>Alege dintr-o gamă variată de calculatoare și laptopuri la prețuri competitive.</p>
+    
+    <!-- Exemplu produs 1 -->
+    <div class="product">
+        <img src="https://dlcdnwebimgs.asus.com/gain/26b2a6c1-fa0f-4de9-87e7-3cbde6b4fd77/w800" alt="Laptop ASUS Zenbook 14 OLED UM3406HA">
+        <div class="product-info">
+            <h3>Laptop ASUS Zenbook 14 OLED UM3406HA</h3>
+            <p>Procesor: AMD Ryzen™ 7 8840HS pana la 5.1 GHz, 14'', Full HD, OLED, 60Hz, 16GB LPDDR5X, 1TB SSD, AMD Radeon™ Graphics, Windows 11 Pro, Jade Black</p>
+            <p class="price">Preț: 1,200 RON</p>
+            <P>Cod produs: 119</p>
+        </div>
+    </div>
+
+    <!-- Exemplu produs 2 -->
+    <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQukU2pHYXe5REIcBMjNyGob_z9w0QdL7j9Jw&s" alt="Laptop Gaming ASUS TUF A15 FA506NC">
+        <div class="product-info">
+            <h3>Laptop Gaming ASUS TUF A15 FA506NC</h3>
+            <p>Procesor: AMD Ryzen™ 5 7535HS pana la 4.55 GHz, 15.6", Full HD, IPS, 144Hz, 16GB, 1TB SSD, NVIDIA® GeForce RTX™ 3050 4GB GDDR6, No OS, Graphite Black</p>
+            <p class="price">Preț: 1,700 RON</p>
+            <p>Cod produs: 120</p>
+        </div>
+    </div>
+
+    <!-- Exemplu produs 3 -->
+    <div class="product">
+        <img src="https://dlcdnwebimgs.asus.com/gain/78f56c3a-82cb-4eca-b4b5-1180274aef25/w800" alt="ASUS Vivobook 16X (K3604)">
+        <div class="product-info">
+            <h3>Laptop ASUS Vivobook 16X (K3604)</h3>
+            <p>Procesor: Intel® Core™ i5-1240P Processor 1.7 GHz, Placa video: Intel® Iris Xe Graphics, Memorie: 16 GB DDR4, Stocare: 512 GB SSD M.2 NVMe™ PCIe® 4.0</p>
+            <p class="price">Preț: 850 RON</p>
+            <p>Cod produs: 125</p>
+        </div>
+    </div>
+
+    <!-- Exemplu produs 4 -->
+    <div class="product">
+        <img src="https://www.pbtech.com/pacific/imgprod/N/B/NBKASU89663__2.jpg" alt="ASUS BR1402C">
+        <div class="product-info">
+            <h3>Laptop ASUS BR1402C</h3>
+            <p>Procesor: Intel® Processor N200 1.0 GHz, Placa video: Intel® UHD Graphics, Memorie: 8 GB DDR4, Stocare: 256 GB SSD M.2 NVMe™ PCIe® 3.0</p>
+            <p class="price">Preț: 760 RON</p>
+            <p>Cod produs: 126</p>
+        </div>
+    </div>
+
+    <!-- Exemplu produs 5 -->
+    <div class="product">
+        <img src="https://lcdn.altex.ro/resize/media/catalog/product/l/a/16fa6a9aef7ffd6209d5fd9338ffa0b1/lapr1504zabq286_1_fcfdbdcf.jpg" alt="Laptop ASUS Vivobook 15 D1502YA-BQ425">
+        <div class="product-info">
+            <h3>Laptop ASUS Vivobook 15 D1502YA-BQ425</h3>
+            <p>Procesor: AMD Ryzen 7 7730U, Frecvență: până la 4.5GHz</p>
+            <p class="price">Preț: 2,499.99 RON</p>
+            <p>Cod produs: 147</p>
+        </div>
+    </div>
+
+    <!-- Produs 7 -->
+    <div class="product">
+        <img src="https://dlcdnwebimgs.asus.com/gain/1aca7500-02b1-4f9c-a552-5774240a7f52/" alt="ASUS TUF Gaming A15">
+        <div class="product-info">
+            <h3>Laptop ASUS TUF Gaming A15 (2023)</h3>
+            <p>Procesor: AMD Ryzen 7 7735HS, NVIDIA GeForce RTX 4060, 16GB RAM, 512GB SSD</p>
+            <p class="price">Preț: 4000 RON</p>
+            <p>Cod produs: 105</p>
+        </div>
+    </div>
+
+    <!-- Produs 8 -->
+    <div class="product">
+        <img src="https://ro.store.asus.com/media/catalog/product/d/6/d6795faef_490962_b.jpg" alt="ASUS Vivobook S 14 OLED">
+        <div class="product-info">
+            <h3>Laptop ASUS Vivobook S 14 OLED (M5406)</h3>
+            <p>Procesor: AMD Ryzen 7 5800H, 16GB RAM, 1TB SSD</p>
+            <p class="price">Preț: 2500 RON</p>
+            <p>Cod produs: 106</p>
+        </div>
+    </div>
+
+    <!-- Produs 9 -->
+    <div class="product">
+        <img src="https://www.it-fashion.ro/images/detailed/621/Laptop_gaming_ACER_Nitro_V16_ANV16-41_NH.QRUEX.00H_2.jpg" alt="ACER Nitro V16">
+        <div class="product-info">
+            <h3>Laptop Gaming ACER Nitro V16</h3>
+            <p>Procesor: AMD Ryzen 7 8845HS, 16GB RAM, 512GB SSD</p>
+            <p class="price">Preț: 3200 RON</p>
+            <p>Cod produs: 113</p>
+        </div>
+    </div>
+
+    <!-- Produs 10 -->
+    <div class="product">
+        <img src="https://lcdn.altex.ro/resize/media/catalog/product/m/s/2bd48d28d1c32adea0e55139a4e6434a/msi_thin_gf63_12_1_249a9784.jpg" alt="MSI Thin GF63">
+        <div class="product-info">
+            <h3>Laptop Gaming MSI Thin GF63</h3>
+            <p>Procesor: Intel Core i5-12450H, 16GB RAM, 1TB SSD</p>
+            <p class="price">Preț: 1200 RON</p>
+            <p>Cod produs: 114</p>
+        </div>
+    </div>
+
+    <!-- Produs 11 -->
+    <div class="product">
+        <img src="https://gomagcdn.ro/domains2/laptoplab.ro/files/product/large/laptop-gaming-dell-xps-17-9730-intel-core-i7-13700h-17inch-touch-ram-32gb-ssd-1tb-nvidia-geforce-rtx-4070-8gb-windows-11-pro-platinum-silver-black-388886.jpg" alt="Dell XPS 17">
+        <div class="product-info">
+            <h3>Laptop Dell XPS 17</h3>
+            <p>Procesor: Intel Core i7-13700H, 32GB RAM, 1TB SSD, NVIDIA GeForce RTX 4050</p>
+            <p class="price">Preț: 5100 RON</p>
+            <p>Cod produs: 115</p>
+        </div>
+    </div>
+
+    <!-- Produs 12 -->
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71mqyG75JxL.jpg" alt="Titan 18 HX A14V">
+        <div class="product-info">
+            <h3>Laptop Gaming MSI Titan 18 HX A14V</h3>
+            <p>Procesor: Intel Core i9-14900HX, 64GB RAM, 2TB SSD, NVIDIA GeForce RTX 4080</p>
+            <p class="price">Preț: 9322 RON</p>
+            <p>Cod produs: 516</p>
+        </div>
+    </div>
+
+    <!-- Produs 13 -->
+    <div class="product">
+        <img src="https://s13emagst.akamaized.net/products/69036/69035850/images/res_ccb6a50bf770139affffa97dd41bc4e4.jpg" alt="Dell Vostro 3910 MT">
+        <div class="product-info">
+            <h3>Unitate PC Dell Vostro 3910 MT</h3>
+            <p>Procesor: Intel Core i5, 8GB RAM, 512GB SSD, Windows 11 Pro</p>
+            <p class="price">Preț: 1250 RON</p>
+            <p>Cod produs: 430</p>
+        </div>
+    </div>
+
+    <!-- Produs 14 -->
+    <div class="product">
+        <img src="https://s13emagst.akamaized.net/products/75966/75965695/images/res_127e180c1021ceb8c8b0b690d936ee26.jpg" alt="Lenovo ThinkCentre M920q">
+        <div class="product-info">
+            <h3>Mini PC Lenovo ThinkCentre M920q</h3>
+            <p>Procesor: Intel Core i5-8500T, 16GB RAM, 512GB SSD</p>
+            <p class="price">Preț: 1400 RON</p>
+            <p>Cod produs: 569</p>
+        </div>
+    </div>
+
+    <!-- Produs 15 -->
+    <div class="product">
+        <img src="https://s13emagst.akamaized.net/products/52534/52533107/images/res_7530f5388a36b83118d7406a66d1defc.jpg" alt="Mac Mini M2 Pro">
+        <div class="product-info">
+            <h3>Mac Mini PC Apple M2 Pro</h3>
+            <p>Procesor: Apple M2 Pro, 16GB RAM, 512GB SSD</p>
+            <p class="price">Preț: 5000 RON</p>
+            <p>Cod produs: 874</p>
+        </div>
+    </div>
+
+    <!-- Produs 16 -->
+    <div class="product">
+        <img src="https://cdn.forit.ro/images/products/img_202306241139/458104/normal/dell-optiplex-3000-mt-procesor-intel-core-i5-12500-3-0ghz-alder-lake-16gb-ram-512gb-ssd-plus-1tb-hdd-uhd-770-no-os-755534.jpg" alt="Dell Optiplex 3000 MT">
+        <div class="product-info">
+            <h3>Unitate PC Dell Optiplex 3000 MT</h3>
+            <p>Procesor: Intel Core i5-12400, 16GB RAM, 512GB SSD</p>
+            <p class="price">Preț: 1500 RON</p>
+            <p>Cod produs: 490</p>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2024 F.E. MK TECH - Toate drepturile rezervate</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produse - F.E. MK TECH</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2e8b57; /* Verde smarald pentru fundal */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        header {
+            background-color: rgba(39, 109, 70, 0.9); /* Verde mai închis, semi-transparent */
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Umbră subtilă */
+        }
+        .logo-container {
+            display: flex;
+            align-items: center; /* Aliniază pe mijloc vertical */
+        }
+        .logo-container img {
+            width: 95px; /* Dimensiune mică spre medie pentru logo */
+            height: 80px;
+            margin-right: 10px; /* Spațiu între logo și text */
+        }
+        .logo-container span {
+            font-size: 22px; /* Dimensiune potrivită pentru text */
+            font-weight: bold;
+            color: white;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        nav ul li {
+            margin-right: 15px; /* Spațiu între elementele de navigare */
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            transition: background-color 0.3s ease; /* Efect de tranziție pentru hover */
+        }
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Schimbă fundalul la hover */
+            border-radius: 5px; /* Colțuri rotunjite la hover */
+        }
+        .content {
+            flex: 1;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            color: #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #2e8b57;
+            text-align: center;
+        }
+        .category {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .category a {
+            display: block;
+            padding: 15px;
+            margin: 10px auto;
+            max-width: 300px;
+            background-color: #2e8b57;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .category a:hover {
+            background-color: #276d46;
+        }
+        footer {
+            background-color: #276d46; /* Verde mai închis pentru footer */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="c:\Users\Alex\Desktop\bdd38244-b1eb-4102-bda1-da53f572f510-removebg-preview.png" alt="Logo F.E. MK TECH">
+        <span>F.E. MK TECH SRL</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="produse.html">Produse</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="locatie.html">Unde ne găsești?</a></li>
+            <li><a href="despre.html">Despre noi</a></li> <!-- Link către pagina Despre noi -->
+        </ul>
+    </nav>
+</header>
+
+<div class="content">
+    <h1>Produse</h1>
+    <p>Alege categoria de produse care te interesează pentru a explora opțiunile disponibile.</p>
+    
+    <div class="category">
+        <a href="calculatoare-laptopuri.html">Calculatoare & Laptopuri</a>
+    </div>
+    <div class="category">
+        <a href="monitoare.html">Monitoare</a>
+    </div>
+    <div class="category">
+        <a href="echipamente-periferice.html">Echipamente Periferice</a>
+    </div>
+    <div class="category">
+        <a href="imprimante-multifunctionale.html">Imprimante & Multifuncționale</a>
+    </div>
+    <div class="category">
+        <a href="birotica-consumabile.html">Birotică & Consumabile</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 F.E. MK TECH - Toate drepturile rezervate</p>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F.E. MK TECH</title>
+    <style>
+        /* Stilizarea logo-ului și barei de navigare */
+        header {
+            background-color: rgba(39, 109, 70, 0.9); /* Verde mai închis, semi-transparent */
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Umbră subtilă */
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center; /* Aliniază pe mijloc vertical */
+        }
+
+        .logo-container img {
+            width: 95px; /* Dimensiune mică spre medie pentru logo */
+            height: 80px;
+            margin-right: 10px; /* Spațiu între logo și text */
+        }
+
+        .logo-container span {
+            font-size: 22px; /* Dimensiune potrivită pentru text */
+            font-weight: bold;
+            color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin-right: 15px; /* Spațiu între elementele de navigare */
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            transition: background-color 0.3s ease; /* Efect de tranziție pentru hover */
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Schimbă fundalul la hover */
+            border-radius: 5px; /* Colțuri rotunjite la hover */
+        }
+
+        /* Fundalul animat de honeycomb */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+            background-color: #2e8b57; /* Verde smarald de bază */
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 20%, transparent 20%),
+                              radial-gradient(circle, rgba(255, 255, 255, 0.1) 20%, transparent 20%);
+            background-position: 0 0, 50px 50px;
+            background-size: 100px 100px;
+            z-index: -1;
+            animation: moveHoneycomb 10s linear infinite;
+        }
+
+        @keyframes moveHoneycomb {
+            0% { background-position: 0 0, 50px 50px; }
+            100% { background-position: 100px 100px, 150px 150px; }
+        }
+
+        footer {
+            background-color: rgba(39, 109, 70, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 1;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2e8b57;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <!-- Logo-ul stilizat -->
+        <img src="c:\Users\Alex\Desktop\bdd38244-b1eb-4102-bda1-da53f572f510-removebg-preview.png" alt="Logo F.E. MK TECH">
+        <span>F.E. MK TECH SRL</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="produse.html">Produse</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="locatie.html">Unde ne găsești?</a></li>
+            <li><a href="despre.html">Despre noi</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="content">
+    <h1>Bine ai venit la F.E. MK TECH!</h1>
+    <p>Oferim cele mai bune soluții de aparatură de birotică pentru biroul tău. Descoperă produsele noastre din categoriile Calculatoare & Laptopuri, Monitoare, Echipamente Periferice, Papetărie și Consumabile. Serviciile noastre sunt dedicate pentru a satisface nevoile tale profesionale.</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 F.E. MK TECH - Toate drepturile rezervate</p>
+    <p>Ultima actualizare: <span id="last-updated"></span></p>
+</footer>
+
+<script>
+    const lastUpdated = document.lastModified;
+    document.getElementById('last-updated').textContent = lastUpdated;
+</script>
+
+</body>
+</html>
